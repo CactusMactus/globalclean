@@ -69,10 +69,8 @@ p {
   color:#050516;
 }
 
-pre {
-  font-size: 1.3em;
-  margin-left: 2.5em;
-  color:#050516;
+#price ul {
+  list-style:none;
 }
 
 /*p:last-child{
