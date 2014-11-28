@@ -1,15 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
 html, body {
   padding: 0;
   margin: 0;
 }
-
-.content {
-  text-align: left;
-  font-family: helvetica, verdana, arial, sans-serif;
-  padding: 1em;
-  background: transparent 50% 50%/cover no-repeat fixed;
-  color: #667;
-} 
 
 h1 {
   margin-top: 0;
@@ -39,20 +34,25 @@ h1 a{
   font-size: 0.7em;
 }
 
-a[href="#about-us"]{
-  background-image: url('../image/about-us.jpg');
+a{
+	border-radius: 70px;
+	cursor: pointer;
 }
 
-a[href="#services"]{
-   background-image: url('../image/services.jpg');
+a#about-us{
+  background-color: #2ACFBC;
 }
 
-a[href="#price"]{
-   background-image: url('../image/price.jpg');
+a#services{
+   background-color: #028eaf;
 }
 
-a[href="#contact"]{
-  background-image: url('../image/contact.jpg');
+a#price{
+   background-color: #036082;
+}
+
+a#contact{
+  background-color: #102540;
 }
 
 h2{
@@ -69,10 +69,29 @@ p {
   color:#050516;
 }
 
-#price ul {
-  list-style:none;
-  margin-left: 5em;
-  padding:0;
+.intro {
+  text-align: left;
+  background: white;
+  height:24em;
+}
+
+.content {
+  text-align: left;
+  font-family: helvetica, verdana, arial, sans-serif;
+  padding: 1em;
+  background: transparent 50% 50%/cover no-repeat fixed;
+  color: #102540;
+}
+
+.main {
+  background: white;
+  padding: 4.5em 1em;
+}
+
+.footer {
+  background: #050516;
+  color: #ddd;
+  padding-bottom: 2em;
 }
 
 .footer p{
@@ -93,14 +112,8 @@ p {
 
 .intro-image {
   height: 65px;
-  background-image: url('../image/left-small.jpg');
+  background-image: url('../image/left.jpg');
   background-color: #2ACFBC;
-}
-
-.intro {
-  text-align: left;
-  background: white;
-  height:24em;
 }
 
 .some-image {
@@ -109,42 +122,32 @@ p {
   background-color: #5c5c6d;
 }
 
-.main {
-  background: white;
-  padding: 4.5em 1em;
-}
-
 .another-image {
   height: 500px;
   background-image: url('../image/left.jpg');
   background-color: #5e120c;
 }
 
-.footer {
-  background: #050516;
-  color: #ddd;
-  padding-bottom: 2em;
-}
-
-#price .columns {
+.content.main .columns {
    overflow: hidden;
    margin-left: 5em;
    margin-right: 5em;
 }
 
-#price ul{
- padding:0;
- margin:0;
+.content.main ul {
+   padding:0;
+   margin:0;
+   list-style: none;
 }
 
-#price ul.left{
-  float:left;
-  width: 45%;
+.columns .left{
+    float:left;
+    width: 45%;
 }
 
-#price ul.right{
-  float:right;
-  width: 45%;
+.columns .right{
+    float:right;
+    width: 45%;
 }
 
 /*.footer h3 {
@@ -183,8 +186,8 @@ p {
   text-align: justify;
 } 
 
-.column:last-child {
+/*.column:last-child {
   margin-left: 3em;
   padding-right: 1.5em;
   border-right: none;
-} 
+}*/ 

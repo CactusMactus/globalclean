@@ -1,13 +1,31 @@
-<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
 
+<body>
+<div id="wrapper">
 <div class="content intro-image">
 </div>
 
 <div class="content intro">
 
   <h1> 
-   <img src="image/global clean logo f.jpg"><a href="#about-us">за нас</a><a href="#services">услуги</a><a href="#price">цени</a><a href="#contact">контакти</a>
+   <img src="image/global clean logo f.jpg">
+ 
+   <a id="about-us" onclick="movePage(1000)">за нас</a>
+   <a id="services" onclick="movePage(1950)">услуги</a>
+   <a id="price" onclick="movePage(3050)">цени</a>
+   <a id="contact"  onclick="movePage(3800)">контакти</a>
   </h1> 
+
+<script>
+function movePage(moveTop){
+	$('html, body').animate({ scrollTop: moveTop }, 500);
+}
+</script>
 
 </div>
 
@@ -16,9 +34,17 @@
 
 <div class="content main" id="about-us">
   <h2>За нас</h2>
-  <p>„Глобал Клийн“ ЕООД е нова, иновативна компания в сферата на професионалното почистване на домове и офиси, създадена за да наложи нови стандарти в почистването. Ние имаме амбицията да наложим нови технологии, създадени специално за да щадят здравето на хората, домашните любимци и природата.
-  <p>Целта ни е да зададем нови стандарти при почистването на домове, офиси, търговските и промишлени площи. Нашето високо качество, конкурентни цени и иновативни технологии и материали, както и високата мотивация на работещите при нас са онова, коeто ни отличават от конкурентните фирми.
-</p>
+  <div class="columns">
+    <div class="left">
+      <p>
+        „Глобал Клийн“ ЕООД е нова, иновативна компания в сферата на професионалното почистване на домове и офиси, създадена за да наложи нови стандарти в почистването. Ние имаме амбицията да наложим нови технологии, създадени специално за да щадят здравето на хората, домашните любимци и природата.
+      </p>
+    </div>
+    <div class="right">
+      <p >Целта ни е да зададем нови стандарти при почистването на домове, офиси, търговските и промишлени площи. Нашето високо качество, конкурентни цени и иновативни технологии и материали, както и високата мотивация на работещите при нас са онова, коeто ни отличават от конкурентните фирми.
+      </p>
+    </div>
+  </div>
 </div>
 
 <div class="content another-image">
@@ -26,17 +52,22 @@
 
 <div class="content main" id="services">
   <h2>Услуги</h2>
-  <p>Почистване на домове</p>
-  <p>Почистване на офиси</p>
-  <p>Почистване за бизнес сгради</p>
-  <p>Пране на мека мебел и настилки</p>
-  <p>Почистване на стъкла, витрини и фасади</p>
-  <p>Почистване на жилищни входове</p>
-  <p>Почистване след строителство и ремонт</p>
-  <p>Абонаментно почистване</p>
+  <div class="columns">
+    <ul class="left">
+      <li>Почистване на домове</li>
+      <li>Почистване на офиси</li>
+      <li>Почистване за бизнес сгради</li>
+      <li>Пране на мека мебел и настилки</li>
+      <li>Почистване на стъкла, витрини и фасади</li>
+      <li>Почистване на жилищни входове</li>
+      <li>Почистване след строителство и ремонт</li>
+      <li>Абонаментно почистване</li>
+    </ul>
+    <ul class="right">
+    </ul>
+  </div>  
 </div>
 
-</div>
 <div class="content some-image">
 </div>
 
@@ -74,21 +105,19 @@
 </div>
 
 <div class="content footer" id="contact">
-  <div class="details">
-    <p>Контакти</p>
-  </div>
+  <h2>Контакти</h2>
   <div class="columns">
-    <div class="column">
-      <h3></h3>
-      <ul>
-        <li>телефон: +359/0888624128</li>
-        <li>телефон: +359/024815215</li>
-        <li>имейл: contact@globalcleanbg.com</li>
-      </ul>
-    </div>
-    <div class="column">
-      <h3></h3>
+  <ul class="left">
+    <li>телефон: +359/0888624128</li>
+    <li>телефон: +359/024815215</li>
+    <li>имейл: contact@globalcleanbg.com</li>
+  </ul>
+  <ul class="right"> 
       <p1>Facebook Google ...</p1>
-    </div>
+  <ul/>
   </div>
+</div>
+
 </div>	
+</body>
+</html>
