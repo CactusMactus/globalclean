@@ -62,11 +62,10 @@ h2{
   color:#050516;
 }
 
-p {
-  font-size: 1.2em;
-  margin-left: 4em;
-  margin-right: 4em;
+p, ul li {
+  font-size: 1.1em;
   color:#050516;
+  line-height: 1.6em;
 }
 
 .intro {
@@ -86,17 +85,6 @@ p {
 .main {
   background: white;
   padding: 4.5em 1em;
-}
-
-.footer {
-  background: #050516;
-  color: #ddd;
-  padding-bottom: 2em;
-}
-
-.footer p{
-  color:white;
-  margin-left: 5em;
 }
 
 /*.call-to-action {
@@ -142,23 +130,30 @@ p {
 
 .columns .left{
     float:left;
-    width: 45%;
+    width: 48%;
 }
 
 .columns .right{
     float:right;
-    width: 45%;
+    width: 48%;
 }
 
 /*.footer h3 {
   font-weight: normal;
 }*/ 
 
+.footer, .footer h2, .footer ul li {
+  color: #fff;
+}
+
+.footer {
+  background: #050516;
+  padding-bottom: 2em;
+}
+
 .footer .column p,
 .footer .column ul {
-  color: white;
   font-size: 1em;
-  margin: 5em;
 } 
 
 /*.footer .details {
@@ -167,15 +162,21 @@ p {
 }*/
   
 .footer ul {
+  padding-left: 2%;
   list-style: circle;
   margin-left: 0;
-  padding-left: 1.2em;
 } 
 
 .footer .columns {
   overflow: hidden;
-  margin-left: 3em;
-} 
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.footer .columns ul {
+  padding-left: 2%;
+  width: 48%
+}
 
 .footer .column {
   width: 30em;
