@@ -1,150 +1,135 @@
 <!DOCTYPE html>
 <head>
-<meta charset="utf-8" />
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <meta charset="utf-8" />
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+  function movePage(moveTop){
+    $('html, body').animate({ scrollTop: moveTop }, 500);
+  }
+  </script>
 </head>
 
 <body>
-<div id="wrapper">
-<div class="content intro-image">
-</div>
+  <div id="wrapper">
+    <div class="content intro-image">
+    </div>
 
-<div class="content intro">
+  <div class="content intro">
 
-  <h1> 
-   <img src="image/global clean logo f.jpg">
+    <h1> 
+      <img src="image/global clean logo f.jpg">
  
-   <a id="about-us" onclick="movePage(1000)">за нас</a>
-   <a id="services" onclick="movePage(1950)">услуги</a>
-   <a id="price" onclick="movePage(3050)">цени</a>
-   <a id="contact"  onclick="movePage(3800)">контакти</a>
-  </h1> 
+      <a id="about-us" onclick="movePage(1000)">за нас</a>
+      <a id="services" onclick="movePage(1950)">услуги</a>
+      <a id="price" onclick="movePage(3050)">цени</a>
+      <a id="contact"  onclick="movePage(3800)">контакти</a>
+    </h1> 
 
-<script>
-function movePage(moveTop){
-	$('html, body').animate({ scrollTop: moveTop }, 500);
-}
-</script>
+  </div>
 
-</div>
+  <div class="content some-image">
+  </div>
 
-<div class="content some-image">
-</div>
-
-<div class="content main" id="about-us">
-  <h2>За нас</h2>
-  <div class="columns">
-    <div class="left">
-      <p>
-        „Глобал Клийн“ ЕООД е нова, иновативна компания в сферата на професионалното почистване на домове и офиси, създадена за да наложи нови стандарти в почистването. Ние имаме амбицията да наложим нови технологии, създадени специално за да щадят здравето на хората, домашните любимци и природата.
-      </p>
-    </div>
-    <div class="right">
-      <p >Целта ни е да зададем нови стандарти при почистването на домове, офиси, търговските и промишлени площи. Нашето високо качество, конкурентни цени и иновативни технологии и материали, както и високата мотивация на работещите при нас са онова, коeто ни отличават от конкурентните фирми.
-      </p>
+  <div class="content main" id="about-us">
+    <h2>За нас</h2>
+    <div class="columns">
+      <div class="left">
+        <p>
+          „Глобал Клийн“ ЕООД е нова, иновативна компания в сферата на професионалното почистване на домове и офиси, създадена за да наложи нови стандарти в почистването. Ние имаме амбицията да наложим нови технологии, създадени специално за да щадят здравето на хората, домашните любимци и природата.
+        </p>
+      </div>
+      <div class="right">
+        <p>
+          Целта ни е да зададем нови стандарти при почистването на домове, офиси, търговските и промишлени площи. Нашето високо качество, конкурентни цени и иновативни технологии и материали, както и високата мотивация на работещите при нас са онова, коeто ни отличават от конкурентните фирми.
+        </p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="content another-image">
-</div>
-
-<div class="content main" id="services">
-  <h2>Услуги</h2>
-  <div class="columns">
-    <ul class="left">
-      <li>Почистване на домове</li>
-      <li>Почистване на офиси</li>
-      <li>Почистване за бизнес сгради</li>
-      <li>Пране на мека мебел и настилки</li>
-      <li>Почистване на стъкла, витрини и фасади</li>
-      <li>Почистване на жилищни входове</li>
-      <li>Почистване след строителство и ремонт</li>
-      <li>Абонаментно почистване</li>
-    </ul>
-    <ul class="right">
-    </ul>
-  </div>  
-</div>
-
-<div class="content some-image">
-</div>
-
-<div class="content main" id="price">
-  <h2>Цени</h2>
-  <div class="columns">
-  <ul class="left">  
-    <li>Машинно почистване на твърди подови настилки – 1.50 лв/кв.м</li>
-    <li>Ръчно почистване на твърди подови настилки – 0.70 лв/кв.м</li>
-    <li>Почистване на стъпала – 1 лв/бр</li>
-    <li>Пране на меки настилки(мокети,килими) – 1.50 лв/кв.м</li>
-    <li>Пране на стандартен стол с облегалка – 3 лв/бр</li>
-    <li>Почистване на стъкла и дограма до 4 метра(едностранно) – 1 лв/кв.м</li>
-    <li>Почистване на стъкла и дограма над 4 метра(едностранно) – 2 лв/кв.м</li>
-    <li>Почистване на външни щори – 1.5 лв/кв.м</li>
-    <li>Фаянс и теракота – 1,5 до 2.5лв/кв.м</li>
-    <li>Мивка – 7лв/бр.</li>
-  </ul>
-  <ul class="right">  
-    <li>Тоалетна чиния – 7лв/бр.</li>
-    <li>Ванa, душ кабина, джакузи – 10лв/бр</li>
-    <li>Комплексно почистване на баня – 40лв</li>
-    <li>Почистване на радиатори – 3лв/бр</li>
-    <li>Почистване на врати – 3лв/бр</li>
-    <li>Почистване на осветителни тела – 4лв/бр</li>
-    <li>Комплексно почистване на дома – от 2 до 4лв/кв.м</li>
-    <li>Извършване на неспецифична работа – 7лв/ час</li>
-    <li>Прахосмукиране – 0.50лв/кв.м</li>
-    <li>Комплексно зелено почистване на дома и офиса от 80кв.м. – 180лв</li>
-  </ul>
+  <div class="content another-image">
   </div>
-</div>
 
-<div class="content another-image">
-</div>
+  <div class="content main" id="services">
+    <h2>Услуги</h2>
+    <div class="columns">
+      <ul class="left">
+        <li>Почистване на домове</li>
+        <li>Почистване на офиси</li>
+        <li>Почистване за бизнес сгради</li>
+        <li>Пране на мека мебел и настилки</li>
+        <li>Почистване на стъкла, витрини и фасади</li>
+        <li>Почистване на жилищни входове</li>
+        <li>Почистване след строителство и ремонт</li>
+        <li>Абонаментно почистване</li>
+      </ul>
+    </div>  
+  </div>
 
-<table id="footer">
-<tr>
-<td style="color: white; width: 50%; padding-left: 100px;">
-  <table>
-    <tr><td style="color: white;font-size: 2em; padding-bottom: 20px;">Контакти</td></tr>
-  
-    <tr><td>телефон: +359/0888624128</td></tr>
-    <tr><td>телефон: +359/024815215</td></tr>
-    <tr><td>имейл: contact@globalcleanbg.com</td></tr>
-  </table>
-</td>
-  
-  <td>
-    <table style="margin: 0 auto;">
-      <tr>
-      <td>
+  <div class="content some-image">
+  </div>
+
+  <div class="content main" id="price">
+    <h2>Цени</h2>
+    <div class="columns">
+      <ul class="left">  
+        <li>Машинно почистване на твърди подови настилки – 1.50 лв/кв.м</li>
+        <li>Ръчно почистване на твърди подови настилки – 0.70 лв/кв.м</li>
+        <li>Почистване на стъпала – 1 лв/бр</li>
+        <li>Пране на меки настилки(мокети,килими) – 1.50 лв/кв.м</li>
+        <li>Пране на стандартен стол с облегалка – 3 лв/бр</li>
+        <li>Почистване на стъкла и дограма до 4 метра(едностранно) – 1 лв/кв.м</li>
+        <li>Почистване на стъкла и дограма над 4 метра(едностранно) – 2 лв/кв.м</li>
+        <li>Почистване на външни щори – 1.5 лв/кв.м</li>
+        <li>Фаянс и теракота – 1,5 до 2.5лв/кв.м</li>
+        <li>Мивка – 7лв/бр.</li>
+      </ul>
+      
+      <ul class="right">  
+        <li>Тоалетна чиния – 7лв/бр.</li>
+        <li>Ванa, душ кабина, джакузи – 10лв/бр</li>
+        <li>Комплексно почистване на баня – 40лв</li>
+        <li>Почистване на радиатори – 3лв/бр</li>
+        <li>Почистване на врати – 3лв/бр</li>
+        <li>Почистване на осветителни тела – 4лв/бр</li>
+        <li>Комплексно почистване на дома – от 2 до 4лв/кв.м</li>
+        <li>Извършване на неспецифична работа – 7лв/ час</li>
+        <li>Прахосмукиране – 0.50лв/кв.м</li>
+        <li>Комплексно зелено почистване на дома и офиса от 80кв.м. – 180лв</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content another-image">
+  </div>
+
+  <div id="footer">
+
+    <h3>Контакти</h3>
+    <ul>
+      <li>телефон: +359/0888624128</li>
+      <li>телефон: +359/024815215</li>
+      <li>имейл: contact@globalcleanbg.com</li>
+    </ul>
+    
+    <aside>  
       <a href="https://www.facebook.com/GlobalCleanBulgaria">
         <img  class="icon" src="image/icons/f-111.png">
       </a>   
-      </td>   
       
-      <td>
       <a href="https://twitter.com/MaartinaK">
         <img class="icon" src="image/icons/g-111.png">
       </a>
-      </td>
-      
-      <td>      
-      <a href="https://www.linkedin.com/profile/view?id=166058336&trk=nav_responsive_tab_profile">
+          
+      <a href="https://www.linkedin.com/profile/view?id=166058336&amp;trk=nav_responsive_tab_profile">
         <img class="icon" src="image/icons/in-111.png">
       </a>
-      </td>
-      
-      <td>      
+            
       <a href="https://github.com/CactusMactus/cactusmactus.github.io">
         <img class="icon" src="image/icons/p-111.png">
       </a>
-      </td>
-      </tr>
-      </table>
- 
-    </td>
-    </tr>
-  </table>
+    </aside> 
+  </div>
+
+</body>
+</html>  
