@@ -108,13 +108,13 @@ p, ul li {
 .some-image {
   height: 500px;
   background-image: url('../image/right-small.jpg');
-  background-color: #5c5c6d;
+  background-color: #2acfbc;
 }
 
 .another-image {
   height: 500px;
   background-image: url('../image/left.jpg');
-  background-color: #5e120c;
+  background-color: #2acfbc;
 }
 
 .content.main .columns {
@@ -139,87 +139,43 @@ p, ul li {
     width: 48%;
 }
 
-/*.footer h3 {
-  font-weight: normal;
-}*/ 
-
-.footer, .footer h2, .footer ul li {
-  color: #fff;
+#footer {
+    background:#102540;
+    color:white;
+    width: 100%; 
+    height: 300px;
 }
 
-.footer {
-  background: #050516;
-  padding-bottom: 10em;
+#footer section {
+    float:left;
+    padding-left: 20px;
+  }
+
+#footer section h3{
+    font-size: 30px;
+    padding-left: 40px;
+    padding-top: 40px;
 }
 
-.footer .column p,
-.footer .column ul {
-  font-size: 1em;
+#footer section li{
+    color:white;
+    list-style: none;
+}
+
+#footer aside{
+    overflow: hidden;
+    float: right;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 9%;
+    padding-right:6%;
 } 
 
-/*.footer .details {
-  border-bottom: 0.1em solid #777;
-  padding: 1em;
-}*/
-  
-.footer ul {
-  padding-left: 2%;
-  list-style: circle;
-  margin-left: 0;
-} 
-
-#buttons {
-  /*position: relative;*/
-  float:right;
-  padding-bottom:20em;
-  padding-right: 2em;
-  width: 48%;
+#footer aside a{
+    text-decoration: none;
 }
 
-#buttons a{
-  text-decoration:none; 
-}
-
-#buttons a img{
-  height: 100px;
-  width: 100px;
-}
-
-.footer .columns {
-  overflow: hidden;
-  margin-left: 5em;
-  margin-right: 5em;
-  width: 48%;
-  display: block;
-}
-
-.footer .columns ul {
-  padding-left: 2%;
-  width: 48%;
-  display: block;
-}
-
-/*.footer .column {
-  width: 30em;
-  float: left;
-  padding-right: 1.5em;
-  border-right: 0.06em solid white;
-  margin-right: 1.5em;
-  text-align: justify;
-} */
-
-/*.column:last-child {
-  margin-left: 3em;
-  padding-right: 1.5em;
-  border-right: none;
-}*/ 
-
-.icon{
-  width: 90px;
-}
-
-#footer{
-  background-color: black; 
-  width: 100%; 
-  height: 300px;
-}
+#footer img{
+    width: 80px; 
+    height: 80px;
+}    
