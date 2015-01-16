@@ -69,6 +69,22 @@ p, ul li {
   line-height: 180%;
 }
 
+#services li{
+  clear:left;
+}
+
+#services li img{
+  max-width: 15%;
+  float:left;
+}
+
+#services li p{
+  margin-left: 18%;
+  padding-top: 5%;
+}
+
+
+
 .intro {
   text-align: left;
   background: white;
@@ -85,7 +101,7 @@ p, ul li {
 
 .main {
   background: white;
-  padding: 2%;
+  padding: 5%;
 }
 
 /*.call-to-action {
