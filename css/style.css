@@ -95,7 +95,6 @@ p, ul li {
   float: right;
   margin-top: 13%;
   margin-right: 8%; 
-
 }
 
 .intro span {
@@ -119,21 +118,42 @@ p, ul li {
   padding: 5%;
 }
 
-
 .left-price li {
   width: 9em;
   padding-left: 28em;
   margin: 0;
 }
 
-
 .right-price {
   width: 9em;
   padding-left: 25em;
   margin:0;
   float: right;
-
 }
+
+#price {
+  overflow:hidden;
+}
+
+table.left {
+  width:52%;
+  float:left;
+  padding-left: 6%;
+  font-size: 1.1em; 
+}
+
+table.right {
+  width:46%;
+  float:right;
+  padding-right: 3%;
+  font-size: 1.1em;
+}
+
+#price table td:last-child {
+  white-space: nowrap;
+  vertical-align: text-top;
+}
+
 /*.call-to-action {
   display: inline-block;
   font-size: 2em;
