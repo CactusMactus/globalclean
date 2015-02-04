@@ -29,6 +29,7 @@ h1 {
   color: white;
   margin-right: 0.5em;
   font-size: 1.3em;
+  vertical-align: text-top;
 }
 
 a {
@@ -36,19 +37,19 @@ a {
   cursor: pointer;
 }
 
-a#about-us {
+a.about-us {
   background-color: #2ACFBC;
 }
 
-a#services {
+a.services {
    background-color: #028eaf;
 }
 
-a#price {
+a.price {
    background-color: #036082;
 }
 
-a#contact {
+a.contact {
   background-color: #102540;
 }
 
@@ -94,13 +95,13 @@ p, ul li {
 .intro nav {
   float: right;
   margin-top: 13%;
-  margin-right: 8%; 
+  margin-right: 6%; 
 }
 
 .intro span {
   font-size: 0.9em;
   white-space: nowrap;
-  margin-left: 6.8%;
+  margin-left: 8.5%;
   margin-bottom: 4%;
   display: block;
 }
@@ -116,19 +117,6 @@ p, ul li {
 .main {
   background: white;
   padding: 5%;
-}
-
-.left-price li {
-  width: 9em;
-  padding-left: 28em;
-  margin: 0;
-}
-
-.right-price {
-  width: 9em;
-  padding-left: 25em;
-  margin:0;
-  float: right;
 }
 
 #price {

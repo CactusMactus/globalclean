@@ -4,7 +4,8 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>
-  function movePage(moveTop){
+  function movePageTo(target){ 
+    var moveTop = $(target).offset().top;
     $('html, body').animate({ scrollTop: moveTop }, 500);
   }
   </script>
@@ -23,10 +24,10 @@
     </h1> 
 
     <nav> 
-      <a id="about-us" onclick="movePage(1000)">за нас</a>
-      <a id="services" onclick="movePage(1950)">услуги</a>
-      <a id="price" onclick="movePage(3050)">цени</a>
-      <a id="contact"  onclick="movePage(3800)">контакти</a>
+      <a class="about-us" onclick="movePageTo('#about-us')">за нас</a>
+      <a class="services" onclick="movePageTo('#services')">услуги</a>
+      <a class="price" onclick="movePageTo('#price')">цени</a>
+      <a class="contact"  onclick="movePageTo('#contact')">контакти</a>
     </nav>   
 
   </div>
@@ -39,7 +40,7 @@
     <div class="columns">
       <div class="left">
         <p>
-          „Глобал Клийн“ ЕООД е нова, иновативна компания в сферата на професионалното почистване на домове и офиси, създадена за да наложи нови стандарти в почистването. Ние имаме амбицията да наложим нови технологии, създадени специално за да щадят здравето на хората, домашните любимци и природата.
+          „Глобал Клийн“ ЕООД е нова, иновативна компания в сферата на професионалното почистване на домове и офиси, създадена за да наложи нови стандарти в почистването. Ние имаме амбицията да наложим нови технологии, създадени специално за да щадят здравето на хората и природата.
         </p>
       </div>
       <div class="right">
