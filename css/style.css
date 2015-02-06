@@ -137,6 +137,10 @@ table.right {
   font-size: 1.1em;
 }
 
+td {
+  padding: 0.4em;
+}
+
 #price table td:last-child {
   white-space: nowrap;
   vertical-align: text-top;
